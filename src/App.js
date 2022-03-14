@@ -1,13 +1,14 @@
-import logo from './logo.svg';
+import Header from './components/Header'
 import './App.css';
 
 function App() {
   return (
     <div className="container">
-      <h2 class="appTitle">Torre Candidates Index</h2>
+        <Header />
         <div className="App">
             
         </div>
+
     </div>
   );
 }
