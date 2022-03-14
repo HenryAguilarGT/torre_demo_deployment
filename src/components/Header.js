@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const Header = () => {
+export const Header = ({ brand }) => {
   return (
-    <h2 class="appTitle">Torre Candidates Index</h2>
+    <h2 className="appTitle">{brand}</h2>
   )
 }
 
