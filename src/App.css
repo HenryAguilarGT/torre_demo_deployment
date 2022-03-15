@@ -41,6 +41,11 @@ h3.peopleName {
   color: darkgray;
 }
 
+.peopleSkills{
+  height: 125px;
+    overflow: hidden;
+}
+
 /* Media Queries for most tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
   
