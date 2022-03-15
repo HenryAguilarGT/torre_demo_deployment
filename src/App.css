@@ -11,7 +11,7 @@
 }
 
 .appTitle{
-  text-align: left;
+  text-align: center;
   color: #cddc39;
 }
 
@@ -41,9 +41,9 @@ h3.peopleName {
   color: darkgray;
 }
 
-.peopleSkills{
-  height: 125px;
-    overflow: hidden;
+.makeHexagon {
+  border-radius: 5%;
+  overflow: hidden;
 }
 
 /* Media Queries for most tablets */
@@ -53,6 +53,10 @@ h3.peopleName {
     display: grid;
     grid-template-columns: auto auto;
   }
+
+  img.imagePeople {
+    width: 325px;
+}
   
 }
 
@@ -63,6 +67,10 @@ h3.peopleName {
     display: grid;
     grid-template-columns: auto;
   }
+
+  img.imagePeople {
+    width: 325px;
+}
   
 }
 

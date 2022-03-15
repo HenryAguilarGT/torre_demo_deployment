@@ -14,7 +14,7 @@ const People = ({ people = [] }) => {
                 <p className="peopleHeadline">{item.professionalHeadline}</p>
                 <p>Skill Set</p>
                 <ul className="peopleSkills">
-                    {item.skills.map((sub) =>
+                    {item.skills.slice(0, 6).map((sub) =>
                     <li>
                         {sub.name}
                     </li>
