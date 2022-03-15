@@ -12,9 +12,15 @@ const People = ({ people = [] }) => {
                 <h3 className="peopleName">{item.name}</h3>
                 <p>{item.locationName}</p>
                 <p className="peopleHeadline">{item.professionalHeadline}</p>
+                <ul>
+                    {item.skills.map((sub) =>
+                    <li>
+                        {sub.name}
+                    </li>
+                    )}
+                </ul>
             </div>
             </>
-            
         ))}
         
     </div>

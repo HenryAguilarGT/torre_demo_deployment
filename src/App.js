@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import Header from './components/Header'
 import './App.css';
 import People from './components/People';
+import Pagination from './components/Pagination';
 
 function App() {
 
@@ -13,7 +14,6 @@ function App() {
     fetch(url,{method: 'POST'})
       .then(response => response.json())
       .then(data => setPeople(data.results))
-      // .then(data => console.log(data.results))
       .catch(error => console.log(error))
   };
 
@@ -28,7 +28,6 @@ function App() {
           <div className="App">
               <People people={people}/>  
           </div>
-
       </div>
       </>
   );
