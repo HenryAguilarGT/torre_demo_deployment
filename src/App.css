@@ -1,15 +1,63 @@
 .container {
   width: 95%;
-  border: solid #f2f2f2 1px;
   margin: 0 auto;
   padding: 15px;
 }
 
 .App {
-  border: dashed #f2f2f2 1px;
   display: grid;
+  width: min-content;
+  margin: 0 auto;
 }
 
 .appTitle{
-  text-align: center;
+  text-align: left;
+  color: #cddc39;
 }
+
+.boxPeople {
+  width: min-content;
+  margin: 45px 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 45px;
+}
+
+.peopleCard {
+  color: #f2f2f2;
+}
+
+img.imagePeople {
+  width: 350px;
+}
+
+h3.peopleName {
+  color: #cddc39;
+  border-bottom: solid 1px;
+  padding-bottom: 10px;
+}
+
+.peopleHeadline {
+  color: darkgray;
+}
+
+/* Media Queries for most tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .boxPeople {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  
+}
+
+/* Media queries for most phones */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .boxPeople {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  
+}
+

@@ -24,11 +24,9 @@ function App() {
   return (
     <>
       <div className="container">
-          <Header brand="Torre's Candidate Index" />
+          <Header brand="torre" />
           <div className="App">
-              <div className='boxPeople'>
-                <People people={people}/>  
-              </div>
+              <People people={people}/>  
           </div>
 
       </div>
